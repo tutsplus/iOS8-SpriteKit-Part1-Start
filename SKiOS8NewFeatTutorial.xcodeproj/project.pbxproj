@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E2C52E719F2A228004B3B02 /* ship.dae in Resources */ = {isa = PBXBuildFile; fileRef = 0E2C52E519F2A228004B3B02 /* ship.dae */; };
+		0E2C52E819F2A228004B3B02 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E2C52E619F2A228004B3B02 /* texture.png */; };
+		0E2F73B619E4A748005C71A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F73B519E4A748005C71A6 /* main.m */; };
+		0E2F73B919E4A748005C71A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F73B819E4A748005C71A6 /* AppDelegate.m */; };
+		0E2F73BC19E4A748005C71A6 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F73BB19E4A748005C71A6 /* GameScene.m */; };
+		0E2F73BE19E4A748005C71A6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F73BD19E4A748005C71A6 /* GameScene.sks */; };
+		0E2F73C119E4A748005C71A6 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F73C019E4A748005C71A6 /* GameViewController.m */; };
+		0E2F73C419E4A748005C71A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F73C219E4A748005C71A6 /* Main.storyboard */; };
+		0E2F73C619E4A748005C71A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F73C519E4A748005C71A6 /* Images.xcassets */; };
+		0E2F73C919E4A748005C71A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F73C719E4A748005C71A6 /* LaunchScreen.xib */; };
+		0E2F73D519E4A749005C71A6 /* SKiOS8NewFeatTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F73D419E4A749005C71A6 /* SKiOS8NewFeatTutorialTests.m */; };
+		0E2F73E419E4A80D005C71A6 /* btnPhysics.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F73DF19E4A80D005C71A6 /* btnPhysics.png */; };
+		0E2F73E519E4A80D005C71A6 /* btnSceneKit.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F73E019E4A80D005C71A6 /* btnSceneKit.png */; };
+		0E2F73E619E4A80D005C71A6 /* btnShaderCoder.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F73E119E4A80D005C71A6 /* btnShaderCoder.png */; };
+		0E2F73E719E4A80D005C71A6 /* btnShaderSize.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F73E219E4A80D005C71A6 /* btnShaderSize.png */; };
+		0E2F73ED19E4AF1D005C71A6 /* LightingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F73EC19E4AF1D005C71A6 /* LightingScene.m */; };
+		0E2F73F019E4AF3D005C71A6 /* PhysicsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F73EF19E4AF3D005C71A6 /* PhysicsScene.m */; };
+		0E2F73F319E4AF5F005C71A6 /* SceneKitScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F73F219E4AF5F005C71A6 /* SceneKitScene.m */; };
+		0E2F73F619E4AF6D005C71A6 /* ShaderScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F73F519E4AF6D005C71A6 /* ShaderScene.m */; };
+		0E391FD419F427180049D30F /* wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E391FD319F427180049D30F /* wood.png */; };
+		0E78DA2B19E833270077D7E0 /* croquette-o.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E78DA2819E833270077D7E0 /* croquette-o.png */; };
+		0E78DA2C19E833270077D7E0 /* croquette-x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E78DA2919E833270077D7E0 /* croquette-x.png */; };
+		0E78DA2D19E833270077D7E0 /* Wicked-Cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E78DA2A19E833270077D7E0 /* Wicked-Cat.png */; };
+		0E78DA2F19E833930077D7E0 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E78DA2E19E833930077D7E0 /* background.jpg */; };
+		0ED83CD819E4B511009720D9 /* LightingSceneEditor.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0ED83CD719E4B511009720D9 /* LightingSceneEditor.sks */; };
+		0ED83CDA19E4B527009720D9 /* PhysicsSceneEditor.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0ED83CD919E4B527009720D9 /* PhysicsSceneEditor.sks */; };
+		0ED83CDC19E4B535009720D9 /* SceneKitSceneEditor.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0ED83CDB19E4B535009720D9 /* SceneKitSceneEditor.sks */; };
+		0EE8675F19F26DE7004E68A0 /* btnLighting.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EE8675E19F26DE7004E68A0 /* btnLighting.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E2F73CF19E4A749005C71A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E2F73A819E4A748005C71A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E2F73AF19E4A748005C71A6;
+			remoteInfo = SKiOS8NewFeatTutorial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E2C52E519F2A228004B3B02 /* ship.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = ship.dae; sourceTree = "<group>"; };
+		0E2C52E619F2A228004B3B02 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+		0E2F73B019E4A748005C71A6 /* SKiOS8NewFeatTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKiOS8NewFeatTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E2F73B419E4A748005C71A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E2F73B519E4A748005C71A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E2F73B719E4A748005C71A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0E2F73B819E4A748005C71A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0E2F73BA19E4A748005C71A6 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		0E2F73BB19E4A748005C71A6 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		0E2F73BD19E4A748005C71A6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		0E2F73BF19E4A748005C71A6 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		0E2F73C019E4A748005C71A6 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		0E2F73C319E4A748005C71A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E2F73C519E4A748005C71A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0E2F73C819E4A748005C71A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0E2F73CE19E4A749005C71A6 /* SKiOS8NewFeatTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKiOS8NewFeatTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E2F73D319E4A749005C71A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E2F73D419E4A749005C71A6 /* SKiOS8NewFeatTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKiOS8NewFeatTutorialTests.m; sourceTree = "<group>"; };
+		0E2F73DF19E4A80D005C71A6 /* btnPhysics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnPhysics.png; sourceTree = "<group>"; };
+		0E2F73E019E4A80D005C71A6 /* btnSceneKit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnSceneKit.png; sourceTree = "<group>"; };
+		0E2F73E119E4A80D005C71A6 /* btnShaderCoder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnShaderCoder.png; sourceTree = "<group>"; };
+		0E2F73E219E4A80D005C71A6 /* btnShaderSize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnShaderSize.png; sourceTree = "<group>"; };
+		0E2F73EB19E4AF1D005C71A6 /* LightingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightingScene.h; sourceTree = "<group>"; };
+		0E2F73EC19E4AF1D005C71A6 /* LightingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightingScene.m; sourceTree = "<group>"; };
+		0E2F73EE19E4AF3D005C71A6 /* PhysicsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsScene.h; sourceTree = "<group>"; };
+		0E2F73EF19E4AF3D005C71A6 /* PhysicsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysicsScene.m; sourceTree = "<group>"; };
+		0E2F73F119E4AF5F005C71A6 /* SceneKitScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneKitScene.h; sourceTree = "<group>"; };
+		0E2F73F219E4AF5F005C71A6 /* SceneKitScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneKitScene.m; sourceTree = "<group>"; };
+		0E2F73F419E4AF6D005C71A6 /* ShaderScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderScene.h; sourceTree = "<group>"; };
+		0E2F73F519E4AF6D005C71A6 /* ShaderScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaderScene.m; sourceTree = "<group>"; };
+		0E391FD319F427180049D30F /* wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood.png; sourceTree = "<group>"; };
+		0E78DA2819E833270077D7E0 /* croquette-o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "croquette-o.png"; sourceTree = "<group>"; };
+		0E78DA2919E833270077D7E0 /* croquette-x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "croquette-x.png"; sourceTree = "<group>"; };
+		0E78DA2A19E833270077D7E0 /* Wicked-Cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wicked-Cat.png"; sourceTree = "<group>"; };
+		0E78DA2E19E833930077D7E0 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		0ED83CD719E4B511009720D9 /* LightingSceneEditor.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LightingSceneEditor.sks; sourceTree = "<group>"; };
+		0ED83CD919E4B527009720D9 /* PhysicsSceneEditor.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PhysicsSceneEditor.sks; sourceTree = "<group>"; };
+		0ED83CDB19E4B535009720D9 /* SceneKitSceneEditor.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SceneKitSceneEditor.sks; sourceTree = "<group>"; };
+		0EE8675E19F26DE7004E68A0 /* btnLighting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnLighting.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E2F73AD19E4A748005C71A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E2F73CB19E4A749005C71A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E2F73A719E4A748005C71A6 = {
+			isa = PBXGroup;
+			children = (
+				0E2F73B219E4A748005C71A6 /* SKiOS8NewFeatTutorial */,
+				0E2F73D119E4A749005C71A6 /* SKiOS8NewFeatTutorialTests */,
+				0E2F73B119E4A748005C71A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0E2F73B119E4A748005C71A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F73B019E4A748005C71A6 /* SKiOS8NewFeatTutorial.app */,
+				0E2F73CE19E4A749005C71A6 /* SKiOS8NewFeatTutorialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E2F73B219E4A748005C71A6 /* SKiOS8NewFeatTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F73E819E4A814005C71A6 /* Resources */,
+				0E2F73B719E4A748005C71A6 /* AppDelegate.h */,
+				0E2F73B819E4A748005C71A6 /* AppDelegate.m */,
+				0E2F73BA19E4A748005C71A6 /* GameScene.h */,
+				0E2F73BB19E4A748005C71A6 /* GameScene.m */,
+				0E2F73F419E4AF6D005C71A6 /* ShaderScene.h */,
+				0E2F73F519E4AF6D005C71A6 /* ShaderScene.m */,
+				0E2F73F119E4AF5F005C71A6 /* SceneKitScene.h */,
+				0E2F73F219E4AF5F005C71A6 /* SceneKitScene.m */,
+				0E2F73EE19E4AF3D005C71A6 /* PhysicsScene.h */,
+				0E2F73EF19E4AF3D005C71A6 /* PhysicsScene.m */,
+				0E2F73EB19E4AF1D005C71A6 /* LightingScene.h */,
+				0E2F73EC19E4AF1D005C71A6 /* LightingScene.m */,
+				0E2F73BF19E4A748005C71A6 /* GameViewController.h */,
+				0E2F73C019E4A748005C71A6 /* GameViewController.m */,
+				0E2F73C219E4A748005C71A6 /* Main.storyboard */,
+				0E2F73C519E4A748005C71A6 /* Images.xcassets */,
+				0E2F73C719E4A748005C71A6 /* LaunchScreen.xib */,
+				0E2F73B319E4A748005C71A6 /* Supporting Files */,
+			);
+			path = SKiOS8NewFeatTutorial;
+			sourceTree = "<group>";
+		};
+		0E2F73B319E4A748005C71A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F73B419E4A748005C71A6 /* Info.plist */,
+				0E2F73B519E4A748005C71A6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E2F73D119E4A749005C71A6 /* SKiOS8NewFeatTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F73D419E4A749005C71A6 /* SKiOS8NewFeatTutorialTests.m */,
+				0E2F73D219E4A749005C71A6 /* Supporting Files */,
+			);
+			path = SKiOS8NewFeatTutorialTests;
+			sourceTree = "<group>";
+		};
+		0E2F73D219E4A749005C71A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F73D319E4A749005C71A6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E2F73E819E4A814005C71A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F73E919E4A81C005C71A6 /* Textures */,
+				0E2F73EA19E4A91D005C71A6 /* Editor */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0E2F73E919E4A81C005C71A6 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				0E78DA2E19E833930077D7E0 /* background.jpg */,
+				0E78DA2819E833270077D7E0 /* croquette-o.png */,
+				0E78DA2919E833270077D7E0 /* croquette-x.png */,
+				0E78DA2A19E833270077D7E0 /* Wicked-Cat.png */,
+				0E391FD319F427180049D30F /* wood.png */,
+				0E2C52E519F2A228004B3B02 /* ship.dae */,
+				0E2C52E619F2A228004B3B02 /* texture.png */,
+				0E2F73DF19E4A80D005C71A6 /* btnPhysics.png */,
+				0E2F73E019E4A80D005C71A6 /* btnSceneKit.png */,
+				0E2F73E119E4A80D005C71A6 /* btnShaderCoder.png */,
+				0EE8675E19F26DE7004E68A0 /* btnLighting.png */,
+				0E2F73E219E4A80D005C71A6 /* btnShaderSize.png */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		0E2F73EA19E4A91D005C71A6 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F73BD19E4A748005C71A6 /* GameScene.sks */,
+				0ED83CD719E4B511009720D9 /* LightingSceneEditor.sks */,
+				0ED83CD919E4B527009720D9 /* PhysicsSceneEditor.sks */,
+				0ED83CDB19E4B535009720D9 /* SceneKitSceneEditor.sks */,
+			);
+			name = Editor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E2F73AF19E4A748005C71A6 /* SKiOS8NewFeatTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E2F73D819E4A749005C71A6 /* Build configuration list for PBXNativeTarget "SKiOS8NewFeatTutorial" */;
+			buildPhases = (
+				0E2F73AC19E4A748005C71A6 /* Sources */,
+				0E2F73AD19E4A748005C71A6 /* Frameworks */,
+				0E2F73AE19E4A748005C71A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKiOS8NewFeatTutorial;
+			productName = SKiOS8NewFeatTutorial;
+			productReference = 0E2F73B019E4A748005C71A6 /* SKiOS8NewFeatTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E2F73CD19E4A749005C71A6 /* SKiOS8NewFeatTutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E2F73DB19E4A749005C71A6 /* Build configuration list for PBXNativeTarget "SKiOS8NewFeatTutorialTests" */;
+			buildPhases = (
+				0E2F73CA19E4A749005C71A6 /* Sources */,
+				0E2F73CB19E4A749005C71A6 /* Frameworks */,
+				0E2F73CC19E4A749005C71A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E2F73D019E4A749005C71A6 /* PBXTargetDependency */,
+			);
+			name = SKiOS8NewFeatTutorialTests;
+			productName = SKiOS8NewFeatTutorialTests;
+			productReference = 0E2F73CE19E4A749005C71A6 /* SKiOS8NewFeatTutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E2F73A819E4A748005C71A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Orlando Pereira";
+				TargetAttributes = {
+					0E2F73AF19E4A748005C71A6 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					0E2F73CD19E4A749005C71A6 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 0E2F73AF19E4A748005C71A6;
+					};
+				};
+			};
+			buildConfigurationList = 0E2F73AB19E4A748005C71A6 /* Build configuration list for PBXProject "SKiOS8NewFeatTutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E2F73A719E4A748005C71A6;
+			productRefGroup = 0E2F73B119E4A748005C71A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E2F73AF19E4A748005C71A6 /* SKiOS8NewFeatTutorial */,
+				0E2F73CD19E4A749005C71A6 /* SKiOS8NewFeatTutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E2F73AE19E4A748005C71A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2F73E419E4A80D005C71A6 /* btnPhysics.png in Resources */,
+				0ED83CDC19E4B535009720D9 /* SceneKitSceneEditor.sks in Resources */,
+				0E2F73C919E4A748005C71A6 /* LaunchScreen.xib in Resources */,
+				0E2C52E819F2A228004B3B02 /* texture.png in Resources */,
+				0ED83CDA19E4B527009720D9 /* PhysicsSceneEditor.sks in Resources */,
+				0E78DA2C19E833270077D7E0 /* croquette-x.png in Resources */,
+				0E2F73E519E4A80D005C71A6 /* btnSceneKit.png in Resources */,
+				0E78DA2B19E833270077D7E0 /* croquette-o.png in Resources */,
+				0E2F73C619E4A748005C71A6 /* Images.xcassets in Resources */,
+				0E2F73E619E4A80D005C71A6 /* btnShaderCoder.png in Resources */,
+				0E2F73BE19E4A748005C71A6 /* GameScene.sks in Resources */,
+				0E2C52E719F2A228004B3B02 /* ship.dae in Resources */,
+				0E391FD419F427180049D30F /* wood.png in Resources */,
+				0E78DA2D19E833270077D7E0 /* Wicked-Cat.png in Resources */,
+				0E2F73E719E4A80D005C71A6 /* btnShaderSize.png in Resources */,
+				0EE8675F19F26DE7004E68A0 /* btnLighting.png in Resources */,
+				0E78DA2F19E833930077D7E0 /* background.jpg in Resources */,
+				0ED83CD819E4B511009720D9 /* LightingSceneEditor.sks in Resources */,
+				0E2F73C419E4A748005C71A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E2F73CC19E4A749005C71A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E2F73AC19E4A748005C71A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2F73C119E4A748005C71A6 /* GameViewController.m in Sources */,
+				0E2F73B919E4A748005C71A6 /* AppDelegate.m in Sources */,
+				0E2F73F319E4AF5F005C71A6 /* SceneKitScene.m in Sources */,
+				0E2F73F019E4AF3D005C71A6 /* PhysicsScene.m in Sources */,
+				0E2F73BC19E4A748005C71A6 /* GameScene.m in Sources */,
+				0E2F73F619E4AF6D005C71A6 /* ShaderScene.m in Sources */,
+				0E2F73ED19E4AF1D005C71A6 /* LightingScene.m in Sources */,
+				0E2F73B619E4A748005C71A6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E2F73CA19E4A749005C71A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2F73D519E4A749005C71A6 /* SKiOS8NewFeatTutorialTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E2F73D019E4A749005C71A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E2F73AF19E4A748005C71A6 /* SKiOS8NewFeatTutorial */;
+			targetProxy = 0E2F73CF19E4A749005C71A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E2F73C219E4A748005C71A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E2F73C319E4A748005C71A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E2F73C719E4A748005C71A6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E2F73C819E4A748005C71A6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E2F73D619E4A749005C71A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0E2F73D719E4A749005C71A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E2F73D919E4A749005C71A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SKiOS8NewFeatTutorial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0E2F73DA19E4A749005C71A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SKiOS8NewFeatTutorial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0E2F73DC19E4A749005C71A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SKiOS8NewFeatTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKiOS8NewFeatTutorial.app/SKiOS8NewFeatTutorial";
+			};
+			name = Debug;
+		};
+		0E2F73DD19E4A749005C71A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SKiOS8NewFeatTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKiOS8NewFeatTutorial.app/SKiOS8NewFeatTutorial";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E2F73AB19E4A748005C71A6 /* Build configuration list for PBXProject "SKiOS8NewFeatTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E2F73D619E4A749005C71A6 /* Debug */,
+				0E2F73D719E4A749005C71A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E2F73D819E4A749005C71A6 /* Build configuration list for PBXNativeTarget "SKiOS8NewFeatTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E2F73D919E4A749005C71A6 /* Debug */,
+				0E2F73DA19E4A749005C71A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E2F73DB19E4A749005C71A6 /* Build configuration list for PBXNativeTarget "SKiOS8NewFeatTutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E2F73DC19E4A749005C71A6 /* Debug */,
+				0E2F73DD19E4A749005C71A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E2F73A819E4A748005C71A6 /* Project object */;
+}
